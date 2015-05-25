@@ -7,29 +7,30 @@
 	<style>
 		.container{
 			
-			height:960px;
-			width:960px;
+			height:900px;
+			width:900px;
 			margin-right: auto;
 			margin-left: auto;
-			background-color: black;
+			background-color: white;
+			border: 2px solid green;
 		}
-		.grids{
-			height:55px;
-			width:55px;
-			background-color: green;
+		.squares{
+			border: 1px solid black;
+			float: left;
+			background-color: #b8b8b8;
 		}
-		table{
-			border-spacing: 0px;
-			border-collapse: collapse;
-		}
+
 	</style>
 </head>
-<body>
+<body background="http://wallpaperart.org/wp-content/flowers3.jpg">
 
+<p align="center"><button class="single" onclick="singleClick()">Single color sketch</button> 
+   <button class="faded" onclick="fadedClick()">Faded sketch</button>
+   <button class="rgb" onclick="rgbClick()">Random sketch</button>   
+   <button class="clear" onclick="clearGrid()">Clear grid</button>
+</p>
 <div id="target" class="container">
-	<table id="table">
-		
-	</table>
+
 </div>
 
 </body>
